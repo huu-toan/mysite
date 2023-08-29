@@ -1,7 +1,4 @@
 from django.db import models
-
-# Create your models here.
-from django.db import models
 import uuid  # Required for unique book instances.
 from django.urls import reverse  # Used to generate URLs by reversing the URL patterns.
 from django.utils.translation import gettext as _
@@ -12,8 +9,8 @@ class Genre(models.Model):
     """Model representing a book genre."""
     name = models.CharField(max_length=200, help_text=_('Enter a book genre (e.g.Science Fiction)'))
 
-    #String for representing the Model object.
     def __str__(self):
+        """String for representing the Model object."""
         return self.name
 
 
@@ -27,12 +24,18 @@ class Book(models.Model):
                                         '">ISBN number</a>'))
     genre = models.ManyToManyField(Genre, help_text=_('Select a genre for this book'))
 
-    #String for representing the Model object.
+    def display_genre(self):
+        """Create a string for the genre. This is required to display genre in Admin"""
+        return ', '.join(genre.name for genre in self.genre[:3])
+
+    display_genre.short_description = 'Genre'
+
     def __str__(self):
+        """String for representing the Model object."""
         return self.title
 
-    #Returns the url to access a detail record for this book.
     def get_absolute_url(self):
+        """Returns the url to access a detail record for this book."""
         return reverse('book-detail', args=[str(self.id)])
 
 
@@ -50,8 +53,8 @@ class BookInstance(models.Model):
     class Meta:
         ordering = ['due_back']
 
-    #String for representing the Model object.
     def __str__(self):
+        """String for representing the Model object."""
         return f'{self.id} ({self.book.title})'
 
 
@@ -65,10 +68,10 @@ class Author(models.Model):
     class Meta:
         ordering = ['last_name', 'first_name']
 
-    #Returns the url to access a particular author instance.
     def get_absolute_url(self):
+        """Returns the url to access a particular author instance."""
         return reverse(_('author-detail'), args=[str(self.id)])
 
-    #String for representing the Model object.
     def __str__(self):
+        """String for representing the Model object."""
         return f'{self.last_name}, {self.first_name}'
