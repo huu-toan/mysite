@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.contrib import admin
 from .models import Author, Genre, Book, BookInstance
 
-@admin.site.register(Genre)
+admin.site.register(Genre)
 
 
 # Define the admin class
@@ -14,7 +14,7 @@ class AuthorAdmin(admin.ModelAdmin):
 
 
 # Register the admin class with the associated mode1
-@admin.site.register(Author, AuthorAdmin)
+admin.site.register(Author, AuthorAdmin)
 
 
 # Register the Admin classes for Book using the decorator
