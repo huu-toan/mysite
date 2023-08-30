@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-28 15:39+0700\n"
+"POT-Creation-Date: 2023-08-30 13:44+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,54 +18,149 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\locallibrary\catalog\models.py:13
+#: .\locallibrary\catalog\models.py:10
 msgid "Enter a book genre (e.g.Science Fiction)"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:24
+#: .\locallibrary\catalog\models.py:21
 msgid "Enter a brief description of the book"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:26
+#: .\locallibrary\catalog\models.py:23
 msgid ""
 "13 Character <a href=\"https://www.isbn-international.org/content/what-isbn"
 "\">ISBN number</a>"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:28
+#: .\locallibrary\catalog\models.py:25
 msgid "Select a genre for this book"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:42
+#: .\locallibrary\catalog\models.py:45
 msgid "Unique ID for this particular book across whole library"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:46
+#: .\locallibrary\catalog\models.py:49
 msgid "Maintenance"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:46
+#: .\locallibrary\catalog\models.py:49
 msgid "On loan"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:46
+#: .\locallibrary\catalog\models.py:49
 msgid "Available"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:46
+#: .\locallibrary\catalog\models.py:49
 msgid "Reserved"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:48
+#: .\locallibrary\catalog\models.py:51
 msgid "Book availability"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:63
+#: .\locallibrary\catalog\models.py:66
 msgid "Died"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:70
+#: .\locallibrary\catalog\models.py:73
 msgid "author-detail"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\base_generic.html:21
+msgid "Home"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\base_generic.html:22
+msgid "All books"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\base_generic.html:23
+msgid "All authors"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:5
+msgid "Title:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:7
+msgid "Author:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:8
+msgid "Summary:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:10
+msgid "Language:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:11
+msgid "Genre:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:13
+#: .\locallibrary\catalog\templates\index.html:11
+msgid "Copies"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:20
+msgid "Due to be returned:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:22
+msgid "Imprint:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_list.html:5
+msgid "Book List"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_list.html:15
+msgid "There are no books in the library."
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:5
+msgid "Local Library Home"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:6
+msgid ""
+"Welcome to LocalLibrary, a website developed by <em>Mozilla Developer "
+"Network</em>!"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:7
+msgid "Dynamic content"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:8
+msgid "The library has the following record counts:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:10
+msgid "Books"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:12
+msgid "Copies available"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:13
+msgid "Authors"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:16
+msgid "You have visited this page "
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:16
+msgid "time"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\index.html:16
+msgid "stt"
 msgstr ""
 
 #: .\locallibrary\locallibrary\settings.py:118
